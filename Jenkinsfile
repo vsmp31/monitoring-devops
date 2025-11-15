@@ -80,7 +80,7 @@ EOF
     stage('Deploy File') {
       steps {
         sh '''
-          install -m 644 $SCRIPT $APP_DIR/$SCRIPT
+            sudo install -m 644 $SCRIPT $APP_DIR/$SCRIPT
         '''
       }
     }
