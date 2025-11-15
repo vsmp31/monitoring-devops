@@ -9,7 +9,7 @@ pipeline {
 
   environment {
     APP_DIR = "/home/monitoring-devops"
-    VENV = "/home/monitoring-devops/venv"
+    VENV = "${WORKSPACE}/venv"
     SERVICE = "monitoring2.service"
     SCRIPT = "monitoring-wa.py"
   }
